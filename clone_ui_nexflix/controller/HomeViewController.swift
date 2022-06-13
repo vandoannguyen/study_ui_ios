@@ -28,7 +28,7 @@ class HomeViewController: UIViewController {
         view.addSubview(handleViewTable)
         handleViewTable.delegate = self
         handleViewTable.dataSource = self
-        handleViewTable.tableHeaderView = HeroHeaderUiView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 600))
+        handleViewTable.tableHeaderView = HeroHeaderUiView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height*2/3)) 
     }
     private func addNavigatorBar(){
         var image = UIImage(named:"netflix_logo")
@@ -52,7 +52,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
         guard let cell = (tableView.dequeueReusableCell(withIdentifier: CollectionViewTableViewCell.indentify, for: indexPath) as? CollectionViewTableViewCell) else {
             return UITableViewCell()
         }
-        return cell  
+        return cell
     }
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return sectionTitles[section]
