@@ -28,6 +28,10 @@
 		189D99D52855E1A3004611B7 /* HeroHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189D99D42855E1A3004611B7 /* HeroHeaderView.swift */; };
 		189D99D92856381F004611B7 /* TableCommingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189D99D72856381F004611B7 /* TableCommingTableViewCell.swift */; };
 		189D99DA2856381F004611B7 /* TableCommingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189D99D82856381F004611B7 /* TableCommingTableViewCell.xib */; };
+		42D0BFE02856D468000E9364 /* TagViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D0BFDE2856D468000E9364 /* TagViewCell.swift */; };
+		42D0BFE12856D468000E9364 /* TagViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42D0BFDF2856D468000E9364 /* TagViewCell.xib */; };
+		42D0BFE728573FF0000E9364 /* ItemTopSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D0BFE528573FF0000E9364 /* ItemTopSearchTableViewCell.swift */; };
+		42D0BFE828573FF0000E9364 /* ItemTopSearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42D0BFE628573FF0000E9364 /* ItemTopSearchTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,10 @@
 		189D99D42855E1A3004611B7 /* HeroHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderView.swift; sourceTree = "<group>"; };
 		189D99D72856381F004611B7 /* TableCommingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCommingTableViewCell.swift; sourceTree = "<group>"; };
 		189D99D82856381F004611B7 /* TableCommingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableCommingTableViewCell.xib; sourceTree = "<group>"; };
+		42D0BFDE2856D468000E9364 /* TagViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagViewCell.swift; sourceTree = "<group>"; };
+		42D0BFDF2856D468000E9364 /* TagViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagViewCell.xib; sourceTree = "<group>"; };
+		42D0BFE528573FF0000E9364 /* ItemTopSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTopSearchTableViewCell.swift; sourceTree = "<group>"; };
+		42D0BFE628573FF0000E9364 /* ItemTopSearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTopSearchTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,10 +164,10 @@
 		18096514285499730013BA52 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				42D0BFE4285726CE000E9364 /* search */,
 				189D99D628563564004611B7 /* comming_soon */,
 				182065652854A33300923542 /* home_tab */,
 				180965172854999B0013BA52 /* DownloadViewController.swift */,
-				18096519285499AA0013BA52 /* TopSearchViewController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -183,8 +191,20 @@
 				1809651B285499BB0013BA52 /* CommingSoonViewController.swift */,
 				189D99D72856381F004611B7 /* TableCommingTableViewCell.swift */,
 				189D99D82856381F004611B7 /* TableCommingTableViewCell.xib */,
+				42D0BFDE2856D468000E9364 /* TagViewCell.swift */,
+				42D0BFDF2856D468000E9364 /* TagViewCell.xib */,
 			);
 			path = comming_soon;
+			sourceTree = "<group>";
+		};
+		42D0BFE4285726CE000E9364 /* search */ = {
+			isa = PBXGroup;
+			children = (
+				18096519285499AA0013BA52 /* TopSearchViewController.swift */,
+				42D0BFE528573FF0000E9364 /* ItemTopSearchTableViewCell.swift */,
+				42D0BFE628573FF0000E9364 /* ItemTopSearchTableViewCell.xib */,
+			);
+			path = search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,10 +317,12 @@
 			files = (
 				180964F12854965A0013BA52 /* LaunchScreen.storyboard in Resources */,
 				189D99D32855B621004611B7 /* ItemFilmViewCellCollectionViewCell.xib in Resources */,
+				42D0BFE828573FF0000E9364 /* ItemTopSearchTableViewCell.xib in Resources */,
 				180964EE2854965A0013BA52 /* Assets.xcassets in Resources */,
 				189D99DA2856381F004611B7 /* TableCommingTableViewCell.xib in Resources */,
 				189D99CF2855B604004611B7 /* HomeTableViewCell.xib in Resources */,
 				180964E9285496520013BA52 /* Main.storyboard in Resources */,
+				42D0BFE12856D468000E9364 /* TagViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +352,8 @@
 				189D99D52855E1A3004611B7 /* HeroHeaderView.swift in Sources */,
 				1809651C285499BB0013BA52 /* CommingSoonViewController.swift in Sources */,
 				180964E2285496520013BA52 /* AppDelegate.swift in Sources */,
+				42D0BFE02856D468000E9364 /* TagViewCell.swift in Sources */,
+				42D0BFE728573FF0000E9364 /* ItemTopSearchTableViewCell.swift in Sources */,
 				180964EC285496520013BA52 /* netflix_ui.xcdatamodeld in Sources */,
 				189D99D22855B621004611B7 /* ItemFilmViewCellCollectionViewCell.swift in Sources */,
 				189D99D92856381F004611B7 /* TableCommingTableViewCell.swift in Sources */,

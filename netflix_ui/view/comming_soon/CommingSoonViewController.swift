@@ -9,21 +9,24 @@ import UIKit
 
 class CommingSoonViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UINib(nibName: "TableCommingTableViewCell", bundle: nil), forCellReuseIdentifier: TableCommingTableViewCell.indentify)
+    }
+}
+extension CommingSoonViewController:UITableViewDelegate, UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: TableCommingTableViewCell.indentify, for: indexPath) as! TableCommingTableViewCell
+        return cell
     }
-    */
-
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 20
+    }
 }
